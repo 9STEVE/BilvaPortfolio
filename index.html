@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Bilva Wambui, full-stack software engineer building web, mobile and cloud-native systems." />
+  <title>Bilva Wambui | Full-Stack Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== MOBILE TOP BAR ========== -->
+  <header class="topbar">
+    <a href="#home" class="brand">
+      <span class="avatar" aria-hidden="true">BW</span>
+      <span>Bilva Wambui</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="sidebar">
+      <span class="menu-btn__bars" aria-hidden="true"></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+  </header>
+
+  <!-- ========== SIDEBAR ========== -->
+  <aside class="sidebar" id="sidebar">
+    <a href="#home" class="brand brand--side">
+      <!-- To use a photo: <img src="photo.jpg" alt="Bilva Wambui" class="avatar"> -->
+      <span class="avatar" aria-hidden="true">BW</span>
+      <span>Bilva Wambui</span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a href="#home" class="nav__link is-active">Home</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="connect">
+      <p class="connect__title">Connect</p>
+      <a href="https://wa.me/254794251934" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="tel:+254794251934">0794 251 934</a>
+      <a href="mailto:ndegebilfer@gmail.com">Email</a>
+    </div>
+
+    <div class="sidebar__foot">
+      <button class="theme-btn" id="themeBtn" type="button">Switch to light</button>
+      <a href="#contact" class="reach">Reach out</a>
+    </div>
+  </aside>
+
+  <div class="scrim" id="scrim"></div>
+
+  <!-- ========== MAIN ========== -->
+  <main class="main">
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <p class="hero__status"><span class="dot"></span>Available for new projects</p>
+      <h1 class="hero__title">Hi, I'm Bilva.<br />I build software that runs real businesses.</h1>
+      <p class="hero__role">Full-Stack Software Engineer</p>
+      <p class="hero__lead">
+        2+ years building production-grade web, mobile, and cloud-native systems — from Vue, Nuxt,
+        React and Angular frontends to Laravel, Spring Boot and Go backends, Flutter and Kotlin apps,
+        and Docker and Kubernetes pipelines.
+      </p>
+      <ul class="tags">
+        <li>Full-stack engineer</li><li>2+ yrs experience</li><li>Web, mobile &amp; cloud</li>
+        <li>DevOps</li><li>M.Sc. Computer Science (in progress)</li>
+      </ul>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Get in touch</a>
+        <a href="#projects" class="btn btn--ghost">See my work</a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section__head">
+        <div>
+          <h2>Featured projects</h2>
+          <p>Live products I've built for schools, businesses, and brands in Kenya.</p>
+        </div>
+      </div>
+
+      <div class="projects">
+        <article class="project">
+          <a href="https://shulenest.com" target="_blank" rel="noopener" class="project__media">
+            <img class="project__thumb" src="https://shulenest.com/og-cover.png" alt="Shulenest website preview" loading="lazy" data-fallback="Shulenest" style="--hue: 210" />
+          </a>
+          <div class="project__body">
+            <div class="project__title">
+              <h3>Shulenest</h3><span class="badge">Live</span>
+            </div>
+            <p>CBC school management system for Kenyan schools: competency-based report cards, M-Pesa fee payments, attendance, an automatic timetable generator, bulk SMS and WhatsApp to parents, and a parent portal. Works offline on any phone.</p>
+            <ul class="chips"><li>SaaS</li><li>M-Pesa</li><li>Offline-first PWA</li><li>Multi-tenant</li></ul>
+            <div class="project__links">
+              <a href="https://shulenest.com" target="_blank" rel="noopener">Visit site</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <a href="https://alg.co.ke" target="_blank" rel="noopener" class="project__media">
+            <img class="project__thumb" src="https://alg.co.ke/hero/group.jpg" alt="Alfalink Group website preview" loading="lazy" data-fallback="Alfalink Group" style="--hue: 25" />
+          </a>
+          <div class="project__body">
+            <div class="project__title">
+              <h3>Alfalink Group of Companies</h3><span class="badge">Live</span>
+            </div>
+            <p>Corporate website for a Nairobi-based group spanning construction, engineering, trade consultancy, and aviation, with a dedicated site for each subsidiary company.</p>
+            <ul class="chips"><li>Corporate</li><li>Multi-site</li><li>Contact &amp; newsletter</li></ul>
+            <div class="project__links">
+              <a href="https://alg.co.ke" target="_blank" rel="noopener">Visit site</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <a href="https://zinkinpalace.com" target="_blank" rel="noopener" class="project__media">
+            <img class="project__thumb" src="https://www.zinkinpalace.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fhero.1v1qqseqtia9n.jpg&w=1200&q=80" alt="Zinkin Palace website preview" loading="lazy" data-fallback="Zinkin Palace" style="--hue: 280" />
+          </a>
+          <div class="project__body">
+            <div class="project__title">
+              <h3>Zinkin Palace</h3><span class="badge">Live</span>
+            </div>
+            <p>Website for a 24/7 gaming and hospitality venue in Nairobi, with an immersive dark design covering the gaming floor, live tables, VIP rooms, sports betting, the lounge, and events.</p>
+            <ul class="chips"><li>Next.js</li><li>Hospitality</li><li>Responsive design</li></ul>
+            <div class="project__links">
+              <a href="https://zinkinpalace.com" target="_blank" rel="noopener">Visit site</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <a href="https://frikamdigitalsolutions.co.ke" target="_blank" rel="noopener" class="project__media project__media--logo">
+            <img class="project__thumb" src="https://frikamdigitalsolutions.co.ke/assets/logo.png" alt="Frikam Digital Solutions logo" loading="lazy" data-fallback="Frikam Digital" style="--hue: 150" />
+          </a>
+          <div class="project__body">
+            <div class="project__title">
+              <h3>Frikam Digital Solutions</h3><span class="badge">Live</span>
+            </div>
+            <p>Business website for a Kenyan IT and digital services company: services and hardware catalogue, quote requests, a service fee calculator, a blog, and WhatsApp contact.</p>
+            <ul class="chips"><li>Business site</li><li>Fee calculator</li><li>Quote requests</li></ul>
+            <div class="project__links">
+              <a href="https://frikamdigitalsolutions.co.ke" target="_blank" rel="noopener">Visit site</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section__head">
+        <div>
+          <h2>Experience</h2>
+          <p>What I've been building and studying.</p>
+        </div>
+      </div>
+
+      <ol class="timeline">
+        <!-- Add an <li class="job"> for each role. Copy this block and edit it. -->
+        <li class="job">
+          <div class="job__meta">
+            <span class="job__date">2+ years – Present</span>
+            <span class="job__place">Kenya / Remote</span>
+          </div>
+          <div class="job__body">
+            <h3>Full-Stack Software Engineer</h3>
+            <ul>
+              <li>Building production-grade web, mobile, and cloud-native systems end to end.</li>
+              <li>Delivered real-world products spanning logistics, property management, agri-commerce, corporate systems, and education.</li>
+              <li>Shipped Shulenest, Alfalink Group, Zinkin Palace, and Frikam Digital Solutions to production.</li>
+              <li>Containerised and deployed services with Docker, Kubernetes, and Helm pipelines.</li>
+            </ul>
+            <ul class="chips"><li>Vue 3</li><li>Nuxt 4</li><li>React</li><li>Laravel</li><li>Spring Boot</li><li>Go</li><li>Flutter</li><li>Kubernetes</li></ul>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job__meta">
+            <span class="job__date">In progress</span>
+            <span class="job__place">Postgraduate study</span>
+          </div>
+          <div class="job__body">
+            <h3>M.Sc. Computer Science</h3>
+            <ul>
+              <li>Pursuing a master's degree in Computer Science while shipping software daily.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS (rendered from script.js so the list is easy to edit) -->
+    <section id="skills" class="section">
+      <div class="section__head">
+        <div>
+          <h2>Skills &amp; expertise</h2>
+          <p>Fluent across the entire stack.</p>
+        </div>
+      </div>
+      <div class="filters" id="skillFilters" role="tablist" aria-label="Filter skills"></div>
+      <ul class="skills" id="skillsList"></ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="about">
+        <div>
+          <h2>About me</h2>
+          <p class="about__text">
+            I'm Bilva, a results-driven full-stack software engineer with 2+ years of building
+            production-grade web, mobile, and cloud-native systems. I work across Vue 3, Nuxt 4, React
+            and Angular on the frontend; Laravel, Spring Boot (Kotlin) and Go on the backend; Flutter
+            and Kotlin for mobile; and Docker, Kubernetes and Helm for DevOps.
+          </p>
+          <p class="about__text">
+            I'm currently pursuing an M.Sc. in Computer Science while shipping software daily.
+          </p>
+          <p class="about__interests-label">Industries I've built for</p>
+          <ul class="tags">
+            <li>Logistics</li><li>Property management</li><li>Agri-commerce</li>
+            <li>Corporate systems</li><li>Education</li><li>Hospitality</li>
+          </ul>
+        </div>
+
+        <dl class="stats">
+          <div class="stat"><dt>Years experience</dt><dd data-count="2" data-suffix="+">0</dd></div>
+          <div class="stat"><dt>Live products featured</dt><dd data-count="4" data-suffix="">0</dd></div>
+          <div class="stat"><dt>Industries served</dt><dd data-count="6" data-suffix="">0</dd></div>
+          <div class="stat"><dt>Platforms: web, mobile, cloud</dt><dd data-count="3" data-suffix="">0</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="contact">
+        <div>
+          <h2>Get in touch</h2>
+          <p>Have a project in mind or want to collaborate? Send a message, call, or reach me on WhatsApp.</p>
+          <ul class="contact__list">
+            <li><span>Email</span><a href="mailto:ndegebilfer@gmail.com">ndegebilfer@gmail.com</a></li>
+            <li><span>Phone</span><a href="tel:+254794251934">0794 251 934</a></li>
+            <li><span>WhatsApp</span><a href="https://wa.me/254794251934" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <small class="field__error"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <small class="field__error"></small>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required />
+            <small class="field__error"></small>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small class="field__error"></small>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Designed &amp; built by Bilva Wambui · © <span id="year"></span></p>
+      <a href="#home" class="link">Back to top</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
