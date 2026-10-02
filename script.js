@@ -73,46 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { rootMargin: "-45% 0px -50% 0px" });
   sections.forEach(s => spy.observe(s));
 
-  /* ---------- Skills: edit this list to change your skills ---------- */
-  const skills = [
-    { name: "Vue 3", cat: "Frontend" },
-    { name: "Nuxt 4", cat: "Frontend" },
-    { name: "React", cat: "Frontend" },
-    { name: "Angular", cat: "Frontend" },
-    { name: "Laravel", cat: "Backend" },
-    { name: "Spring Boot", cat: "Backend" },
-    { name: "Kotlin", cat: "Backend" },
-    { name: "Go", cat: "Backend" },
-    { name: "Flutter", cat: "Mobile" },
-    { name: "Kotlin Android", cat: "Mobile" },
-    { name: "Docker", cat: "DevOps" },
-    { name: "Kubernetes", cat: "DevOps" },
-    { name: "Helm", cat: "DevOps" },
-  ];
-
-  const list = document.getElementById("skillsList");
-  const filterBar = document.getElementById("skillFilters");
-  const initials = name => name.replace(/[^A-Za-z ]/g, " ").split(" ").filter(Boolean)
-    .map(w => w[0]).join("").slice(0, 2).toUpperCase();
-
-  list.innerHTML = skills.map(s =>
-    `<li class="skill" data-cat="${s.cat}"><span class="skill__mark">${initials(s.name)}</span>${s.name}</li>`
-  ).join("");
-
-  const cats = ["All", ...new Set(skills.map(s => s.cat))];
-  filterBar.innerHTML = cats.map((c, i) =>
-    `<button class="filter" role="tab" aria-selected="${i === 0}" data-cat="${c}">${c}</button>`
-  ).join("");
-
-  filterBar.addEventListener("click", e => {
-    const btn = e.target.closest(".filter");
-    if (!btn) return;
-    const cat = btn.dataset.cat;
-    filterBar.querySelectorAll(".filter").forEach(b => b.setAttribute("aria-selected", String(b === btn)));
-    list.querySelectorAll(".skill").forEach(li =>
-      li.classList.toggle("is-hidden", cat !== "All" && li.dataset.cat !== cat));
-  });
-
   /* ---------- Stats count-up when visible ---------- */
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const countUp = el => {
